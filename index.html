@@ -178,3 +178,27 @@ In: Proc. 17th Internat. Conf. on Machine Learning. Morgan Kaufman, Stanford, CA
 </pre>
 
 </p>
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Chane Button Colour</title>
+    </head>
+    <body>
+      <button id="colorButton">Click me to change colour</button>
+      <script>
+       //Get a reference to the button element
+        var button=document.getElementByld("colorButton");
+        //Function to change the button color
+        function changeColor(){
+          //Generate a random color (hexadecimal)
+          var randomColor="#"+Math.floor(Math.random()*16777215.toString(16);
+          //Set the button's background color to the random color
+            button.style.backgroundColor=randomColor;
+        }
+        //Add a click event listener to the button
+        button.addEventListener("click", changeColor);
+      </script>
+    </body>
+  </html>
+  
