@@ -31,17 +31,17 @@
             margin-left: 250px;
         }
 
-        #toc {
-        background-color: #ffeb99; 
-        border: 2px solid #ffaa00; 
-        width: 35%; 
-        padding: 10px; 
-        border-radius: 10px;
-        }
+       #toc {
+    background-color: #ffeb99 !important; /* !important ensures it overrides others */
+    border: 2px solid #ffaa00;
+    width: 35%;
+    padding: 10px;
+    border-radius: 10px;
+}
 
-        #toc th {
-        background-color: #ffd966;
-        }
+#toc th {
+    background-color: #ffd966 !important;
+}
     </style>
 
     <!-- Google Charts -->
@@ -60,17 +60,14 @@
     <hr>
 
     <!-- Table of Contents -->
-    <p class="ex1">
     <table id="toc">
-    <table>
         <tr><th><h2>Table of Contents</h2></th></tr>
         <tr><td><h3><a href="#Abstract">Abstract</a></h3></td></tr>
         <tr><td><h3><a href="#Introduction">Introduction</a></h3></td></tr>
         <tr><td><h3><a href="#Analysis">Analysis & Discussion</a></h3></td></tr>
         <tr><td><h3><a href="#References">References</a></h3></td></tr>
     </table>
-    </p>
-
+    
     <hr>
     <h3 id="Abstract">Abstract</h3>
     <p class="ex1"><pre>
