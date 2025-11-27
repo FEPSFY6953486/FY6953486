@@ -31,18 +31,23 @@
             margin-left: 250px;
         }
 
+        #toc-container {
+        text-align: center;
+        margin: 20px auto;  
+        }
+        
        #toc {
-    background-color: #ffeb99 !important; /* !important ensures it overrides others */
-    border: 2px solid #ffaa00;
-    width: 35%;
-    padding: 10px;
-    border-radius: 10px;
-}
+       background-color: #ffeb99 !important; /* !important ensures it overrides others */
+       border: 2px solid #ffaa00;
+       width: 35%;
+       padding: 10px;
+       border-radius: 10px;
+       }
 
-#toc th {
-    background-color: #ffd966 !important;
-}
-    </style>
+       #toc th {
+       background-color: #ffd966 !important;
+       }
+       </style>
 
     <!-- Google Charts -->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -60,6 +65,7 @@
     <hr>
 
     <!-- Table of Contents -->
+    <div id="toc-container">
     <table id="toc">
         <tr><th><h2>Table of Contents</h2></th></tr>
         <tr><td><h3><a href="#Abstract">Abstract</a></h3></td></tr>
