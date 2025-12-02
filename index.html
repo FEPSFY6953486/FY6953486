@@ -271,14 +271,14 @@ Comprehensive sustainability certification—such as through the Roundtable on S
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText1");
-    const AnalysisCount = displayWordCount("Analysis_InText2");
-    const AnalysisCount = displayWordCount("Analysis_InText3");
-    const AnalysisCount = displayWordCount("Analysis_InText4");
-    const AnalysisCount = displayWordCount("Analysis_InText5");
+    const AnalysisCount1 = displayWordCount("Analysis_InText1");
+    const AnalysisCount2 = displayWordCount("Analysis_InText2");
+    const AnalysisCount3 = displayWordCount("Analysis_InText3");
+    const AnalysisCount4 = displayWordCount("Analysis_InText4");
+    const AnalysisCount5 = displayWordCount("Analysis_InText5");
       
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount +  AnalysisCount1 + AnalysisCount2 + AnalysisCount3 + AnalysisCount4 + AnalysisCount5;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
