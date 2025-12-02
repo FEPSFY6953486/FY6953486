@@ -119,7 +119,7 @@ Abstract test sentence.
    
 
     <hr>
-    <h3 id="Analysis">Analysis and Discussion</h3>
+    <h3>Analysis and Discussion</h3>
         <h4>Production Pathways and Feedstocks</h4>
 <p id="Analysis_InText1">
     
@@ -149,8 +149,15 @@ Beyond CO₂, SAFs can reduce non-CO₂ effects through lower soot and sulfur em
 Comprehensive sustainability certification—such as through the Roundtable on Sustainable Biomaterials (RSB)—is crucial to ensure that SAF deployment aligns with the United Nations Sustainable Development Goals (SDGs) (ICAO, 2024).
 
 </p>
-   
 
+        <hr>
+
+        <h3>Conclusion</h3>
+<p id="Conclusion_InText">
+    Sustainable Aviation Fuels represent the most feasible short- to mid-term pathway to decarbonize aviation while maintaining compatibility with existing infrastructure. Waste- and residue-based SAFs already achieve 50–80% lifecycle GHG reductions, while electrofuels could deliver near-zero emissions as renewable power becomes more accessible.
+However, cost competitiveness, limited feedstock availability, and sustainability governance remain major obstacles. Strong policy support, targeted subsidies, and clear sustainability criteria are needed to expand production while avoiding unintended environmental or social trade-offs.
+In the longer term, SAFs will likely coexist with emerging technologies such as hydrogen and electric aircraft. Their rapid deployment over the next two decades is therefore critical to meeting the aviation industry’s net-zero 2050 goals.
+</p>
     <hr>
 
     <div class="centered-content">    
@@ -276,9 +283,10 @@ Comprehensive sustainability certification—such as through the Roundtable on S
     const AnalysisCount3 = displayWordCount("Analysis_InText3");
     const AnalysisCount4 = displayWordCount("Analysis_InText4");
     const AnalysisCount5 = displayWordCount("Analysis_InText5");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
       
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount +  AnalysisCount1 + AnalysisCount2 + AnalysisCount3 + AnalysisCount4 + AnalysisCount5;
+    const totalWordCount = IntroductionCount + AnalysisCount1 + AnalysisCount2 + AnalysisCount3 + AnalysisCount4 + AnalysisCount5 + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
