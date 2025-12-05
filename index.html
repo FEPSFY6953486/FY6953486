@@ -277,7 +277,7 @@ In the longer term, SAFs will likely coexist with emerging technologies such as 
     <hr>
 
     
-    <h3>Figure 2: Google Pie Chart</h3>
+    <h3>Figure 5: 2050 Sustainable Aviation Fuel</h3>
         
     <!-- Google Pie Chart -->
     <div id="chart_div" style="width:600px; height:400px;"></div>
@@ -288,15 +288,13 @@ In the longer term, SAFs will likely coexist with emerging technologies such as 
 
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['Work', 8],
-                ['Sleep', 8],
-                ['Eat', 2],
-                ['Study', 4],
-                ['Exercise', 2]
+                ['SAF Type', 'Billion Liters'],
+                ['HEFA', 33],
+                ['ATJ-FT', 204],
+                ['PtL', 314],
             ]);
 
-            var options = { title: 'My Daily Activities' };
+            var options = { title: '2050 Sustainable Aviation Fuel Distribution per pathway' };
 
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
             chart.draw(data, options);
