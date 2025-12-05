@@ -55,7 +55,11 @@
     margin-left: auto;
     margin-right: auto;
         }
-
+        #chart_google {
+             display: table;
+    margin-left: auto;
+    margin-right: auto;
+        }
         .centered-table {
     margin-left: auto;
     margin-right: auto;
@@ -294,13 +298,15 @@ In the longer term, SAFs will likely coexist with emerging technologies such as 
                 ['PtL', 314],
             ]);
 
-            var options = { title: '2050 Sustainable Aviation Fuel Distribution per pathway' };
+            var options = { title: '2050 Sustainable Aviation Fuel Distribution per pathway in Billion Liters' };
 
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
             chart.draw(data, options);
         }
     </script>
 
+    <p id="chart_google"> This was referenced from <a href="ref-panov2024">Panov, V. (2024)</a></p>
+        
     <hr>
 
 <!-- //////////////////////////////////////////////////////////////////////////////// -->
@@ -394,17 +400,17 @@ In the longer term, SAFs will likely coexist with emerging technologies such as 
 
     <h3 id="References">References</h3>
     <pre>
-
-<p id="ref-icao2024">
-ICAO (2024) <i>CORSIA Methodology for Calculating Lifecycle Emissions of Sustainable Aviation Fuels</i>, International Civil Aviation Organization. 
-Available at: <a href="https://www.icao.int/sites/default/files/environmental-protection/CORSIA/Documents/CORSIA%20Eligible%20Fuels/ICAO-document-07-Methodology-for-Actual-Life-Cycle-Emissions-June-2025.pdf" target="_blank">https://www.icao.int/sites/default/files/environmental-protection/CORSIA/Documents/CORSIA%20Eligible%20Fuels/ICAO-document-07-Methodology-for-Actual-Life-Cycle-Emissions-June-2025.pdf</a>
-</p>        
+   
 <p id="ref-chireshe2025">
 Christodoulou, A., Iasonas Stavroulas, Mihalis Vrekoussis, Maximillien Desservettaz, Pikridas, M., Elie Bimenyimana, Jonilda Kushta, Matic Ivančič, Rigler, M., Philippe Goloub, Konstantina Oikonomou, 
 Sarda-Estève, R., Savvides, C., Afif, C., Mihalopoulos, N., Sauvage, S. and Sciare, J. (2023). Ambient carbonaceous aerosol levels in Cyprus and the role of pollution transport from the Middle East. 
 <i>Atmospheric chemistry and physics</i>, 23(11), pp.6431–6456. 
 Available at: <a href="https://doi.org/10.5194/acp-23-6431-2023" target="_blank">https://doi.org/10.5194/acp-23-6431-2023</a>
 </p>
+<p id="ref-icao2024">
+ICAO (2024) <i>CORSIA Methodology for Calculating Lifecycle Emissions of Sustainable Aviation Fuels</i>, International Civil Aviation Organization. 
+Available at: <a href="https://www.icao.int/sites/default/files/environmental-protection/CORSIA/Documents/CORSIA%20Eligible%20Fuels/ICAO-document-07-Methodology-for-Actual-Life-Cycle-Emissions-June-2025.pdf" target="_blank">https://www.icao.int/sites/default/files/environmental-protection/CORSIA/Documents/CORSIA%20Eligible%20Fuels/ICAO-document-07-Methodology-for-Actual-Life-Cycle-Emissions-June-2025.pdf</a>
+</p>    
 <p id="ref-lee2023">
 Lee, D.S. (2020). The Contribution of Global Aviation to Anthropogenic Climate Forcing for 2000 to 2018. <i>Atmospheric Environment</i>, [online] 244, p.117834. 
 Available at: <a href="https://doi.org/10.1016/j.atmosenv.2020.117834" target="_blank">https://doi.org/10.1016/j.atmosenv.2020.117834</a>
@@ -412,6 +418,10 @@ Available at: <a href="https://doi.org/10.1016/j.atmosenv.2020.117834" target="_
 <p id="ref-jing2022">
 Liang, T., Vecchi, A., Knobloch, K., Adriano Sciacovelli, Engelbrecht, K., Li, Y. and Ding, Y. (2022). Key components for Carnot Battery: Technology review, technical barriers and selection criteria. <i>Renewable & Sustainable Energy Reviews</i>, 163, pp.112478–112478. 
 Available at: <a href="https://doi.org/10.1016/j.rser.2022.112478" target="_blank">https://doi.org/10.1016/j.rser.2022.112478</a>
+</p>
+<p id="ref-panov2024">
+Panov, V. (2024). Jet Set: How Sustainable Aviation Will Propel Ethanol Production | CZ Advise. [online] CZ Advise. 
+Available at: <a href="https://www.czadvise.com/jet-set-how-sustainable-aviation-will-propel-ethanol-production/" target="_blank">https://www.czadvise.com/jet-set-how-sustainable-aviation-will-propel-ethanol-production/</a> [Accessed 5 Dec. 2025].
 </p>
 <p id="ref-nrel2024">
 Rosales Calderon, O. et al. (2025) <i>Sustainable Aviation Fuel (SAF): State-of-Industry Report: State of SAF Production Process</i>, [online] National Renewable Energy Laboratory. 
@@ -443,9 +453,10 @@ Available at: <a href="https://doi.org/10.1021/acssuschemeng.2c00977" target="_b
 </p>
 <p id="ref-zahid2024">
 Zahid, I., Muhammad Hamza Nazir, Chiang, K., Christo, F. and Ameen, M. (2024). Current outlook on sustainable feedstocks and processes for sustainable aviation fuel production. <i>Current opinion in green and sustainable chemistry</i>, 49, pp.100959–100959.  
-Available at: <a href="https://www.sciencedirect.com/science/article/pii/S2452223624000804" target="_blank">https://www.sciencedirect.com/science/article/pii/S2452223624000804</a>
+Available at: <a href="https://www.sciencedirect.com/science/article/pii/S2452223624000804" target="_blank">https://www.sciencedirect.com/science/article/pii/S2452223624000804</a> 
 </p>
-        
+
+‌
     </pre>
 
 </body>
