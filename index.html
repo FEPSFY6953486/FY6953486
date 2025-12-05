@@ -371,9 +371,13 @@ In the longer term, SAFs will likely coexist with emerging technologies such as 
     const AnalysisCount4 = displayWordCount("Analysis_InText4");
     const AnalysisCount5 = displayWordCount("Analysis_InText5");
     const ConclusionCount = displayWordCount("Conclusion_InText");
-      
+    const figure1 = displayWordCount("figure1");
+    const figure2 = displayWordCount("figure2");
+    const figure3 = displayWordCount("figure3");
+    const figure4 = displayWordCount("figure4");
+    
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount1 + AnalysisCount2 + AnalysisCount3 + AnalysisCount4 + AnalysisCount5 + ConclusionCount;
+    const totalWordCount = IntroductionCount + AnalysisCount1 + AnalysisCount2 + AnalysisCount3 + AnalysisCount4 + AnalysisCount5 + ConclusionCount + figure1 + figure2 + figure3 + figure4;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
