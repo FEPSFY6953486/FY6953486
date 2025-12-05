@@ -170,25 +170,36 @@ body {
 }
 
         .references-box {
-  border: 2px solid #4682B4;     
-  background-color: #F8FBFF;     
-  padding: 15px;                 
-  border-radius: 8px;           
-  max-width: 1800px;           
-  margin: 20px auto;             
+  border: 2px solid #4682B4;     /* Steel blue border */
+  background-color: #F8FBFF;     /* Light background */
+  padding: 15px;                 /* Space inside the box */
+  border-radius: 8px;            /* Rounded corners */
+  max-width: 1800px;             /* Limit box width */
+  margin: 20px auto;             /* Center box on page */
+
+  /* 🧩 Wrapping fixes */
+  overflow-wrap: anywhere;       /* allows breaking anywhere if needed */
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  box-sizing: border-box;        /* ensures padding doesn’t extend beyond box width */
 }
-  overflow-wrap: break-word;     /* modern property */
-  word-wrap: break-word;         /* for older browsers */
-  white-space: normal;           /* ensures text wraps */
-}
+
 .references-box p {
-  margin-bottom: 12px;           
-  line-height: 1.5;              
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
 
 .references-box a {
-  color: #004B8D;               
+  color: #004B8D;
   text-decoration: none;
+
+  /* 🧩 Force long URLs to wrap properly */
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  white-space: normal;
+  display: inline-block;  /* ensures wrapping actually occurs */
+  max-width: 100%;        /* prevents link from extending beyond parent */
 }
 
 .references-box a:hover {
