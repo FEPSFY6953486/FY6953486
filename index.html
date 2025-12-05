@@ -177,7 +177,10 @@ body {
   max-width: 1800px;           
   margin: 20px auto;             
 }
-
+  overflow-wrap: break-word;     /* modern property */
+  word-wrap: break-word;         /* for older browsers */
+  white-space: normal;           /* ensures text wraps */
+}
 .references-box p {
   margin-bottom: 12px;           
   line-height: 1.5;              
